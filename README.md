@@ -6,3 +6,9 @@ This is a simple implementation of the Tic Tac Toe game using Java. The game all
 2. Open the project in your favorite Java IDE _(IntelliJ IDEA is great)_.
 3. Compile and run the `TicTacToe.java` file.
 4. Follow the prompts in the console to play the game.
+
+To compile and run the program, you can use the following commands in your terminal: _(make sure you are in the project directory, where the `Main.java` file is located)_
+```bash
+javac Main.java # To compile the program
+java Main # To run the program
+```
