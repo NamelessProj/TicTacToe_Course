@@ -7,6 +7,11 @@ public class Main {
     public static byte numberOfSquaresPlayed = 0;
     public static boolean hasAWinner = false;
 
+    /**
+     * Main method to run the Tic Tac Toe game.
+     *
+     * @param args Command line arguments (not used).
+     */
     public static void main(String[] args) {
         // Get the user input
         Scanner scanner = new Scanner(System.in);
@@ -95,7 +100,7 @@ public class Main {
      *
      * @param board The current state of the board.
      * @param player The current player ('X' or 'O').
-     * */
+     */
     private static boolean checkForWinner(char[] board, char player) {
         return (board[0] == player && board[1] == player && board[2] == player) ||
                 (board[3] == player && board[4] == player && board[5] == player) ||
