@@ -52,6 +52,7 @@ public class Main {
                 System.out.println("Game over! No player has won.");
             }
 
+            // Ask the user if they want to play again
             System.out.println();
             System.out.print("Do you want to play again? (y/n): ");
             char playAgain = scanner.next().charAt(0);
