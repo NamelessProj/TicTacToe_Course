@@ -1,13 +1,15 @@
 import java.util.Scanner;
 
 public class Main {
+    // Variables
+    public static char[] board = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
+    public static char currentPlayer = 'X'; // X or O
+    public static byte numberOfSquaresPlayed = 0;
+    public static boolean hasAWinner = false;
+
     public static void main(String[] args) {
-        // Initiate variables
+        // Get the user input
         Scanner scanner = new Scanner(System.in);
-        char[] board = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
-        char currentPlayer = 'X'; // X or O
-        byte numberOfSquaresPlayed = 0;
-        boolean hasAWinner = false;
 
         while (true) {
             while (numberOfSquaresPlayed < board.length) { // Making sure the game continues until all squares are played or a player wins
@@ -67,6 +69,7 @@ public class Main {
             System.out.println();
         }
 
+        System.out.println();
         System.out.print("The game has ended.");
     }
 
