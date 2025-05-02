@@ -70,6 +70,9 @@ public class Main {
             System.out.println();
         }
 
+        // Close the scanner
+        scanner.close();
+
         System.out.println();
         System.out.print("The game has ended.");
     }
