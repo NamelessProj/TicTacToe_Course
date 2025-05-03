@@ -21,8 +21,8 @@ public class Main {
                 System.out.println();
                 printBoard(board);
                 System.out.print("Player " + currentPlayer + ", enter your move (1-9): ");
-                byte move = scanner.nextByte();
-                move--;
+                byte input = scanner.nextByte();
+                byte move = (byte) (input - 1); // Adjusting the input to match the array index
 
                 // Check if the move is valid
                 if (move < 0 || move > 8) {
@@ -102,6 +102,14 @@ public class Main {
      * @param player The current player ('X' or 'O').
      */
     private static boolean checkForWinner(char[] board, char player) {
+        /*
+         * The board:
+         *  0 | 1 | 2
+         * ---+---+---
+         *  3 | 4 | 5
+         * ---+---+---
+         *  6 | 7 | 8
+         */
         return (board[0] == player && board[1] == player && board[2] == player) ||
                 (board[3] == player && board[4] == player && board[5] == player) ||
                 (board[6] == player && board[7] == player && board[8] == player) ||
