@@ -1,3 +1,12 @@
+<p align="center">
+<img src="https://img.shields.io/badge/Java-^23.0.2-orange" alt="Java version"/>
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/github/license/NamelessProj/TicTacToe_Course" alt="licence"/>
+<img src="https://img.shields.io/github/repo-size/NamelessProj/TicTacToe_Course" alt="repo size"/>
+</p>
+
 # Tic Tac Toe
 This is a simple implementation of the Tic Tac Toe game using Java. The game allows two players to play against each other on a 3x3 grid. The players take turns marking their symbols (X or O) in the empty cells of the grid until one player wins or the game ends in a draw.
 
